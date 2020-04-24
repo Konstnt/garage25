@@ -10,7 +10,7 @@
 		<script type='text/javascript' src='unitegallery/js/unitegallery.min.js'></script> 
 		
 		<link rel='stylesheet' href='unitegallery/css/unite-gallery.css' type='text/css' /> 
-		<script type='text/javascript' src='unitegallery/themes/tilesgrid/ug-theme-tilesgrid.js'></script>
+		<script type='text/javascript' src='unitegallery/themes/tiles/ug-theme-tiles.js'></script>
 		<link rel='stylesheet' href='unitegallery/themes/default/ug-theme-default.css' type='text/css' /> 
 
 </head>
@@ -20,16 +20,16 @@
 		<div id="gallery">
 		
 			<img alt=""
-				data-image="images/projects/1/1.jpeg">
+				data-image="images/projects/0/1.jpeg">
 		
 			<img alt=""
-				data-image="images/projects/1/2.jpeg">
+				data-image="images/projects/0/2.jpeg">
 		
 			<img alt=""
-				data-image="images/projects/1/3.jpeg">
+				data-image="images/projects/0/3.jpeg">
 		
 			<img alt=""
-				data-image="images/projects/1/4.jpeg">
+				data-image="images/projects/0/4.jpeg">
 			
 		
 		</div>
@@ -37,10 +37,16 @@
 </body>
 
 <script type="text/javascript"> 
-			
-	jQuery(document).ready(function(){ 
-		jQuery("#gallery").unitegallery(); 
-	}); 
+			jQuery("#gallery").unitegallery({
+	slider_enable_arrows:false,
+	slider_enable_progress_indicator:false,
+	slider_enable_play_button:false,
+	slider_enable_fullscreen_button:true,
+	slider_enable_zoom_panel:false,
+	slider_enable_text_panel:false,
+	strippanel_enable_handle:false,
+	gridpanel_enable_handle:false,
+});
 
 </script>
 </html>
