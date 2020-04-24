@@ -2733,6 +2733,13 @@ input, select, textarea {
 				text-align: center;
 			}
 
+			.fullscreen { 
+				margin: 0;
+				padding: 0;
+				height: 800px; /* needed for container min-height */
+
+			}
+
 /* Wide */
 
 	@media screen and (max-width: 1680px) {
