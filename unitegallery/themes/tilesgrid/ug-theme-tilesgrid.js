@@ -27,14 +27,14 @@ function UGTheme_tilesgrid(){
 			theme_navigation_align: "center",		//center, left, right - horizontal align of the navigation
 			theme_navigation_offset_hor: 0,			//horizontal offset of the navigation, according the align
 			theme_bullets_color: "gray",			//gray, blue, brown, green, red - color of the bullets
-			theme_auto_open:null					//auto open lightbox at start
+			theme_auto_open:null				//auto open lightbox at start
 	};
 	
 	var g_defaults = {
 			gallery_width: "100%",
 			
-			tile_width: 180,
-			tile_height: 150,
+			tile_width: 240,
+			tile_height: 250,
 			
 			grid_num_rows: 3,
 			grid_padding: 10,
@@ -42,9 +42,9 @@ function UGTheme_tilesgrid(){
 			tile_enable_border: true,
 			tile_enable_shadow: true,
 			
-			tile_border_radius: 2,
+			tile_border_radius: 1,
 			
-			grid_space_between_cols: 20,
+			grid_space_between_cols: 10,
 			grid_space_between_rows: 20,
 			grid_space_between_mobile: 15,
 			

@@ -302,7 +302,13 @@ input, select, textarea {
 	.card-image {
     width: 360px;
     height: 250px;
-    object-fit: cover;
+		object-fit: cover;
+		border-radius:1em;
+	}
+
+	.projects-card {
+		border-radius: 1.2em;
+		box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
 	}
 	
 	.maps-section {
@@ -2649,7 +2655,7 @@ input, select, textarea {
 				-o-transition: background-color 0.35s ease-in-out;
 				-ms-transition: background-color 0.35s ease-in-out;
 				transition: background-color 0.35s ease-in-out;
-				-webkit-backface-visibility: hidden;
+				/* -webkit-backface-visibility: hidden; */
 			}
 
 			.carousel .forward:after, .carousel .backward:after {

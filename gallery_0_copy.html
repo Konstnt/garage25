@@ -23,24 +23,24 @@ $images = glob($dir . "*.{jpg,jpeg,gif,png,bmp,webp}", GLOB_BRACE);
 </head>
 
 	<body>
+
+	<div class="header">
+		Галерея
+	</div>
 	
 		<div id="gallery">
-
-		<?php
+			
+			<img alt=""
+				data-image="images/projects/1/1.jpeg">
 		
-		// READ FILES FROM THE GALLERY FOLDER
-		$project = $_GET["project"];
-		$imgdir = "images" .DIRECTORY_SEPARATOR . "projects" . DIRECTORY_SEPARATOR . $project . DIRECTORY_SEPARATOR;
-		$dir = __DIR__ . DIRECTORY_SEPARATOR . $imgdir;
-		$images = glob($dir . "*.{jpg,jpeg,gif,png,bmp,webp}", GLOB_BRACE);
+			<img alt=""
+				data-image="images/projects/1/2.jpeg">
 		
+			<img alt=""
+				data-image="images/projects/1/3.jpeg">
 		
-    foreach ($images as $i) {
-			printf("<img alt='' src='$imgdir%s'>", basename($i));
-		}
-		
-    ?>
-		
+			<img alt=""
+				data-image="images/projects/1/4.jpeg">
 		</div>
 	
 </body>
