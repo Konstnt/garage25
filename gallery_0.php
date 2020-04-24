@@ -1,3 +1,9 @@
+<?php
+// READ FILES FROM THE GALLERY FOLDER
+$dir = __DIR__ . DIRECTORY_SEPARATOR . "gallery" . DIRECTORY_SEPARATOR;
+$images = glob($dir . "*.{jpg,jpeg,gif,png,bmp,webp}", GLOB_BRACE);
+
+// DRAW HTML ?>
 <!DOCTYPE HTML>
 
 <html>
@@ -18,18 +24,14 @@
 	<body>
 	
 		<div id="gallery">
+
+		<?php
+    foreach ($images as $i) {
+      printf("<img alt='' data-image='images/projects/%s'>", basename($i));
+    }
+    ?>
 		
-			<img alt=""
-				data-image="images/projects/0/1.jpeg">
 		
-			<img alt=""
-				data-image="images/projects/0/2.jpeg">
-		
-			<img alt=""
-				data-image="images/projects/0/3.jpeg">
-		
-			<img alt=""
-				data-image="images/projects/0/4.jpeg">
 			
 		
 		</div>
